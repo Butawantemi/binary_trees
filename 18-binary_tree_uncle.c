@@ -14,6 +14,12 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 	return (Sib(node->parent));
 }
 
+/**
+ * Sib - Finds the sibling of a node
+ * @node: A pointer to the node to find the sibling
+ * Return: Sibling of node
+ */
+ 
 binary_tree_t *Sib(binary_tree_t *node)
 {
 	if (!node || !node->parent)
